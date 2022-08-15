@@ -1,0 +1,29 @@
+.section-content {
+  margin-top: 130px;
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-block {
+    position: relative;
+  }
+
+  &__parallax-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__txt-block,
+  &__img-block {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  &__txt-block > .title {
+    margin-top: 0;
+    color: #1B0405;
+  }
+}

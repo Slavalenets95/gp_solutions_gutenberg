@@ -1,0 +1,117 @@
+.get-touch {
+  margin-top: 130px;
+  padding: 97px 0 140px;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: $white;
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__form {
+    flex: 0 1 45.25%;
+  }
+
+  .custom-block &__form-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &__form form > p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & br {
+      display: none;
+    }
+  }
+
+  &__form .wpcf7-form-control-wrap[data-name="your-name"],
+  &__form .wpcf7-form-control-wrap[data-name="your-email"] {
+    flex: 0 1 calc(50% - 6.5px);
+    max-width: calc(50% - 6.5px);
+
+    & input {
+      width: 100%;
+    }
+  }
+
+  &__form .wpcf7-form-control-wrap[data-name="your-message"] {
+    width: 100%;
+  }
+
+  &__form input:not(input[type="submit"]),
+  &__form textarea {
+    padding: 14px 20.84px 13px;
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  &__form textarea {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  &__form .sub-textarea {
+    font-size: 12px;
+  }
+
+  &__form input[type="submit"] {
+    margin: 0 auto;
+    margin-top: 36px;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__sub-title {
+    display: block;
+    margin-bottom: 38px;
+  }
+
+  &__content {
+    flex: 0 1 49.1666%;
+    padding: 53px 53px 75px 53px;
+    background: #000;
+  }
+
+  &__content-title {
+    font-size: 28px;
+    margin-bottom: 21px;
+  }
+
+  &__content-item {
+    font-size: 17px;
+    color: rgba(255, 255, 255 , .7);
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      background: #ABCBEA;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &__content-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

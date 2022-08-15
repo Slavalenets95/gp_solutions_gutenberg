@@ -1,0 +1,17 @@
+.custom-block.logo-section {
+  margin-top: 50px;
+}
+
+.custom-block .logo-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.custom-block .logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 15.25%;
+  min-height: 79px;
+}
